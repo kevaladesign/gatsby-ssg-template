@@ -1,7 +1,3 @@
-// @docs https://eslint.org/docs/user-guide/configuring#specifying-parser-options
-// @docs https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md
-// @docs https://github.com/iamturns/create-exposed-app/blob/master/.eslintrc.js
-
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',

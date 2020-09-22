@@ -1,13 +1,15 @@
 const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
-
 console.log(`Environment: ${activeEnv}`);
 require('dotenv').config({ path: `.env.${activeEnv}` });
+
+const siteUrl = process.env.URL || process.env.DEPLOY_URL || ``;
 
 module.exports = {
   siteMetadata: {
     title: `[WEBSITE TITLE]`,
     description: `[WEBSITE DESCRIPTION]`,
     author: `@kevaladesign`,
+    siteUrl,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

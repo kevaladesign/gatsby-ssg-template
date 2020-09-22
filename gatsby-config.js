@@ -25,13 +25,24 @@ module.exports = {
       // options: {
       //   name: `[WEBSITE NAME]`,
       //   short_name: `[WEBSITE SHORT NAME]`,
+      //   description: ``,
+      //   lang: `en`,
       //   start_url: `/`,
       //   background_color: `[WEBSITE BACKGROUND COLOR]`,
       //   theme_color: `[WEBSITE THEME COLOR]`,
-      //   display: `minimal-ui`,
+      //   display: `standalone`,
       //   icon: `src/images/[WEBSITE ICON]`,
+      //   cache_busting_mode: `none`,
+      //   crossOrigin: `use-credentials`,
       // },
     },
-    // `gatsby-plugin-offline`,
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     workboxConfig: {
+    //       globPatterns: [`**/icon-path*`],
+    //     },
+    //   },
+    // },
   ],
 };

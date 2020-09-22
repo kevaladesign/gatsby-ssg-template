@@ -24,6 +24,7 @@
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.1.0",
+    "husky": "^4.3.0",
     "prettier": "^2.1.1",
     "typescript": "^4.0.3"
   },
@@ -42,6 +43,11 @@
     "tsc:check": "tsc --noEmit",
     "prettier:check": "prettier --list-different \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "prettier:write": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier:write"
+    }
   },
   "repository": {
     "type": "git",

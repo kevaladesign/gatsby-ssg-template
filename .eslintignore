@@ -1,0 +1,23 @@
+# Files
+
+.eslintrc.js
+babel-plugin-macros.config.js
+gatsby-browser.js
+gatsby-config.js
+gatsby-node.js
+gatsby-ssr.js
+jest.config.js
+jest.setup.js
+jest-preprocess.js
+loadershim.js
+postcss.config.js
+tailwind.config.js
+
+# Directories
+
+.cache/
+.github/
+.vscode/
+__mocks__/
+node_modules/
+public/

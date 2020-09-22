@@ -1,4 +1,10 @@
-.cache
-package.json
+# Files
+
 package-lock.json
-public
+
+# Directories
+
+.cache/
+node_modules/
+public/
+**/__snapshots__/

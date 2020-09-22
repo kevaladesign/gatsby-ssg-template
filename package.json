@@ -24,7 +24,7 @@
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.1.0",
-    "prettier": "2.1.1",
+    "prettier": "^2.1.1",
     "typescript": "^4.0.3"
   },
   "keywords": [
@@ -39,7 +39,9 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "tsc:check": "tsc --noEmit"
+    "tsc:check": "tsc --noEmit",
+    "prettier:check": "prettier --list-different \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "prettier:write": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "repository": {
     "type": "git",

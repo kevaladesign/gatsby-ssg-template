@@ -24,6 +24,9 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
+    'plugin:testing-library/recommended',
+    'plugin:testing-library/react',
+    'plugin:jest-dom/recommended',
     'plugin:promise/recommended',
     'plugin:unicorn/recommended',
     'prettier',
@@ -31,7 +34,15 @@ module.exports = {
     'prettier/unicorn',
     'prettier/@typescript-eslint',
   ],
-  plugins: ['@typescript-eslint', 'eslint-comments', 'jest', 'promise', 'unicorn'],
+  plugins: [
+    '@typescript-eslint',
+    'eslint-comments',
+    'jest',
+    'testing-library',
+    'jest-dom',
+    'promise',
+    'unicorn',
+  ],
   rules: {
     '@typescript-eslint/explicit-function-return-type': [
       'error',

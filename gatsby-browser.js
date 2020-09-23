@@ -1,3 +1,9 @@
+import { enableAllPlugins } from 'immer';
+
+// @note Enable Immer
+
+enableAllPlugins();
+
 // @note Import Tailwind CSS Preflight Styles
 
 import './src/styles/preflight.css';

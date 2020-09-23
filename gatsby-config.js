@@ -2,7 +2,7 @@ const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'deve
 console.log(`Environment: ${activeEnv}`);
 require('dotenv').config({ path: `.env.${activeEnv}` });
 
-const siteUrl = process.env.URL || process.env.DEPLOY_URL || ``;
+const siteUrl = process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000/`;
 
 module.exports = {
   siteMetadata: {

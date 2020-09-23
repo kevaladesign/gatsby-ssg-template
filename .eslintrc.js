@@ -57,6 +57,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/no-default-export': 'error',
     'no-console': 'off',
+    'no-param-reassign': ['error', { props: true, ignorePropertyModificationsFor: ['draft'] }],
     'no-prototype-builtins': 'off',
     'no-use-before-define': 'off',
     'react/destructuring-assignment': 'off',

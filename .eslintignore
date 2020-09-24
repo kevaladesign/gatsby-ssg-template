@@ -16,8 +16,6 @@ tailwind.config.js
 # Directories
 
 .cache/
-.github/
-.vscode/
 __mocks__/
 node_modules/
 public/

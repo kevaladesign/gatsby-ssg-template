@@ -31,7 +31,7 @@ This template contains variants of the main branch ([`master`](https://github.co
 
 **Styling: Tailwind CSS & Emotion**
 
-###### Branch: [with-twin](https://github.com/kevaladesign/gatsby-ssg-template/tree/with-twin)
+###### Branch: [variant-with-twin](https://github.com/kevaladesign/gatsby-ssg-template/tree/variant-with-twin)
 
 Contains additional configuration for [Twin](https://github.com/ben-rogerson/twin.macro) which integrates:
 

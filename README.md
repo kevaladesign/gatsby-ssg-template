@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.kevaladesign.com/" target="_blank" rel="noopener noreferrer">
-    <img alt="Kevala Design Logo" src="https://github.com/kevaladesign/gatsby-ssg-template/blob/master/src/images/icon.png?raw=true" width="60" />
+    <img alt="Kevala Design Logo" src="https://github.com/kevaladesign/gatsby-ssg-template/blob/variant-with-twin/src/images/icon.png?raw=true" width="60" />
   </a>
 </p>
 <h1 align="center">Gatsby SSG Template</h1>
@@ -11,7 +11,7 @@
 
 ###### Travis CI
 
-[![Build Status](https://travis-ci.com/kevaladesign/gatsby-ssg-template.svg?branch=master)](https://travis-ci.com/kevaladesign/gatsby-ssg-template)
+[![Build Status](https://travis-ci.com/kevaladesign/gatsby-ssg-template.svg?branch=variant-with-twin)](https://travis-ci.com/kevaladesign/gatsby-ssg-template)
 
 **Stack**
 
@@ -29,7 +29,7 @@ This project was built using the [Gatsby.js](https://www.gatsbyjs.com/) default 
 
 This template contains variants of the main branch ([`master`](https://github.com/kevaladesign/gatsby-ssg-template/tree/master)), extending the template to include additional configuration for optional features.
 
-**Styling: Tailwind CSS & Emotion**
+**Styling: Tailwind CSS & Emotion (Current)**
 
 ###### Branch: [variant-with-twin](https://github.com/kevaladesign/gatsby-ssg-template/tree/variant-with-twin)
 

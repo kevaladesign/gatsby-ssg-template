@@ -70,7 +70,7 @@
     "test:watch": "jest --watch",
     "test:update-snapshots": "jest -u",
     "tsc:check": "tsc --noEmit",
-    "eslint:check": "npx eslint . --ext .js,.jsx,.ts,.tsx",
+    "eslint:check": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prettier:check": "prettier --list-different \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "prettier:write": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },

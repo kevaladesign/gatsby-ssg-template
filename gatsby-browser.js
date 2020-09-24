@@ -6,4 +6,4 @@ enableAllPlugins();
 
 // @note Import Tailwind CSS Preflight Styles
 
-import './src/styles/preflight.css';
+import './src/shared/styles/preflight.css';

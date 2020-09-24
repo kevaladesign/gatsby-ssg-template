@@ -1,7 +1,11 @@
 import React, { ReactElement } from 'react';
+import { PageProps } from 'gatsby';
 
-const NotFoundPage = (): ReactElement => (
+import { SEO } from '../components/Global/SEO';
+
+const NotFoundPage = ({ location: { pathname } }: PageProps): ReactElement => (
   <>
+    <SEO title="404: Not Found" pathname={pathname} />
     <h1>Not Found Page</h1>
   </>
 );

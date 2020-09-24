@@ -1,14 +1,32 @@
-const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
-console.log(`Environment: ${activeEnv}`);
-require('dotenv').config({ path: `.env.${activeEnv}` });
+// @note Set Environment Variables
 
-const siteUrl = process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000/`;
+const ACTIVE_ENV = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || `development`;
+require('dotenv').config({ path: `.env.${ACTIVE_ENV}` });
+
+// @note Define and Extract Website and PWA Metadata
+
+const WEBSITE_METADATA = {
+  title: `Kevala Design SSG Template`,
+  description: `Static site generator template using Gatsby`,
+  author: `@kevaladesign`,
+  siteUrl: process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
+};
+
+const PWA_METADATA = {
+  short_name: `SSG Template`,
+  lang: `en`,
+  background_color: `#000000`,
+  theme_color: `#F3F2F1`,
+};
+
+const { title, description, author, siteUrl } = WEBSITE_METADATA;
+const { short_name, lang, background_color, theme_color } = PWA_METADATA;
 
 module.exports = {
   siteMetadata: {
-    title: `[WEBSITE TITLE]`,
-    description: `[WEBSITE DESCRIPTION]`,
-    author: `@kevaladesign`,
+    title,
+    description,
+    author,
     siteUrl,
   },
   plugins: [
@@ -24,19 +42,19 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
-      // options: {
-      //   name: `[WEBSITE NAME]`,
-      //   short_name: `[WEBSITE SHORT NAME]`,
-      //   description: ``,
-      //   lang: `en`,
-      //   start_url: `/`,
-      //   background_color: `[WEBSITE BACKGROUND COLOR]`,
-      //   theme_color: `[WEBSITE THEME COLOR]`,
-      //   display: `standalone`,
-      //   icon: `src/images/[WEBSITE ICON]`,
-      //   cache_busting_mode: `none`,
-      //   crossOrigin: `use-credentials`,
-      // },
+      options: {
+        name: title,
+        short_name,
+        description,
+        lang,
+        start_url: `/`,
+        background_color,
+        theme_color,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+        cache_busting_mode: `none`,
+        crossOrigin: `use-credentials`,
+      },
     },
     // {
     //   resolve: `gatsby-plugin-offline`,
